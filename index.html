@@ -17,10 +17,15 @@
   a{ color:var(--maroon); }
   .note{ background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 18px; }
   footer{ margin-top:36px; color:var(--soft); font-size:.85rem; border-top:1px solid var(--line); padding-top:16px; }
+  .sw{ display:inline-flex; gap:4px; padding:4px; margin:0 0 22px; background:#fff; border:1px solid var(--line); border-radius:999px; }
+  .sw a{ display:inline-block; padding:8px 16px; border-radius:999px; text-decoration:none; color:var(--maroon); font-weight:600; font-size:.95rem; }
+  .sw a[aria-current="page"]{ background:var(--maroon); color:#fff; }
+  .sw a:not([aria-current]):hover{ background:#f3e6d0; }
 </style>
 </head>
 <body>
 <div class="wrap">
+  <nav class="sw" aria-label="Legal pages"><a href="./" aria-current="page">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
   <h1>Privacy Policy</h1>
   <p class="upd">Vedic Panchang — Daily Hindu Almanac · Last updated 22 October 2026</p>
 
